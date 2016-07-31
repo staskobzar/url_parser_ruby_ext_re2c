@@ -1,0 +1,3 @@
+[submodule "ext/lib/url_parser_re2c"]
+	path = ext/lib/url_parser_re2c
+	url = git@github.com:staskobzar/url_parser_re2c.git
