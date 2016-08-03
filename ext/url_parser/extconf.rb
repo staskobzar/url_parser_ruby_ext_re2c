@@ -5,4 +5,4 @@ $libs += " -lurlparser"
 $INCFLAGS << " -I#{libdir}"
 $LIBPATH << libdir
 
-create_makefile 'url_parser'
+create_makefile 'url'

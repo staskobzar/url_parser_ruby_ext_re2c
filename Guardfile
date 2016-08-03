@@ -40,4 +40,9 @@ guard :rspec, cmd: "bundle exec rspec" do
   ruby = dsl.ruby
   dsl.watch_spec_files_for(ruby.lib_files)
 
+  watch('ext/url_parser/url_parser.c') do
+    `bundle exec rake prereq`
+    "spec"
+  end
 end
+

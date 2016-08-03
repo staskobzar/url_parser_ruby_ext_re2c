@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /home/stas/.rvm/rubies/ruby-2.3.0/include/ruby-2.3.0
+topdir = /home/stas/.rvm/rubies/ruby-2.3.1/include/ruby-2.3.0
 hdrdir = $(topdir)
-arch_hdrdir = /home/stas/.rvm/rubies/ruby-2.3.0/include/ruby-2.3.0/x86_64-linux
+arch_hdrdir = /home/stas/.rvm/rubies/ruby-2.3.1/include/ruby-2.3.0/x86_64-linux
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/home/stas/.rvm/rubies/ruby-2.3.0
+prefix = $(DESTDIR)/home/stas/.rvm/rubies/ruby-2.3.1
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -139,8 +139,8 @@ ORIG_SRCS = url_parser.c
 SRCS = $(ORIG_SRCS) 
 OBJS = url_parser.o
 HDRS = 
-TARGET = url_parser
-TARGET_NAME = url_parser
+TARGET = url
+TARGET_NAME = url
 TARGET_ENTRY = Init_$(TARGET_NAME)
 DLLIB = $(TARGET).so
 EXTSTATIC = 
