@@ -37,4 +37,15 @@ describe UrlParser::URL do
       it { expect(url.fragment).to eql 'first_name' }
     end
   end
+  context 'invalid URL' do
+    subject (:url){ UrlParser::URL.new('+invalid url') }
+    it { is_expected.not_to be_valid }
+    it { expect(url.scheme).to be_nil}
+    it { expect(url.userinfo).to be_nil}
+    it { expect(url.host).to be_nil}
+    it { expect(url.port).to be_nil}
+    it { expect(url.path).to be_nil}
+    it { expect(url.query).to be_nil}
+    it { expect(url.fragment).to be_nil}
+  end
 end
