@@ -105,7 +105,7 @@ static VALUE url_parser_fragment (VALUE self)
   return rb_iv_get(self, "@fragment");
 }
 
-void Init_url(void)
+void Init_url_parser(void)
 {
   VALUE mUrlParser = rb_define_module ("UrlParser");
   VALUE cUrlParser = rb_define_class_under (mUrlParser, "URL", rb_cObject);
