@@ -1,6 +1,8 @@
 # UrlParser
 
-TODO: Write a gem description
+Ruby library for parsing URL (RFC 3986).
+C extension with external library which users re2c to generate C code for parsing.
+Detailed descriptions is in the [blog article](http://staskobzar.blogspot.ca/2016/08/url-parser-ruby-c-extension-binding.html).
 
 ## Installation
 
